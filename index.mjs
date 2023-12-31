@@ -1,0 +1,4 @@
+// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import{isPrimitive as e}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer@v0.1.0-esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-collection@v0.1.0-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-stride@v0.1.0-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-esm/index.mjs";function n(n,i){var a;if("object"!=typeof n||null===n||!r(n.shape))throw new TypeError(s("invalid argument. First argument must be an ndarray. Value: `%s`.",n));if(!e(i))throw new TypeError(s("invalid argument. Second argument must be an integer. Value: `%s`.",i));if(a=t(n,i),e(a))return a;throw new TypeError(s("invalid argument. First argument must be an ndarray. Value: `%s`.",n))}export{n as default};
+//# sourceMappingURL=index.mjs.map
