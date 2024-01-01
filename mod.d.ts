@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,26 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Return the stride along a specified dimension for a provided ndarray.
+* Returns the stride along a specified dimension for a provided ndarray.
 *
-* @module @stdlib/ndarray-stride
+* ## Notes
+*
+* -   A "stride" is the linear distance (i.e., number of elements) between adjacent elements along a specified dimension.
+*
+* @param x - input ndarray
+* @param dim - dimension index
+* @returns stride
 *
 * @example
-* var zeros = require( '@stdlib/ndarray-zeros' );
-* var stride = require( '@stdlib/ndarray-stride' );
+* var zeros = require( `@stdlib/ndarray/zeros` );
 *
 * var st = stride( zeros( [ 3, 3, 3 ] ), 0 );
 * // returns 9
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function stride( x: ndarray, dim: number ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = stride;
